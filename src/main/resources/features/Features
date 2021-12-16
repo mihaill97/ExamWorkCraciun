@@ -1,0 +1,13 @@
+Scenario Outline: Login to app
+  Given the app login page is open
+  When the user enters correct email and password
+  Then the user is logged in
+
+  Examples:
+  |email                  |password |
+  |wowcirkle7991@gmail.com|7991cmvw |
+
+Scenario Outline:Choose a black item
+  Given the app start page is open
+  When the user click on side menu checkbox "black"
+  Then user find and click on "Fish Leather Clutch"
